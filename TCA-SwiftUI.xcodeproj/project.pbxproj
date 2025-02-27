@@ -6,13 +6,43 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A03452462D70E58A00571B3E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A03452452D70E58A00571B3E /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A034522A2D70E45200571B3E /* TCA-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCA-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A034525B2D70E73A00571B3E /* Exceptions for "TCA-SwiftUI" folder in "TCA-SwiftUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UserDetail/UserDetailReducer.swift,
+				UserList/UserListReducer.swift,
+			);
+			target = A03452292D70E45200571B3E /* TCA-SwiftUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A034525C2D70E73A00571B3E /* Exceptions for "TCA-SwiftUI" folder in "Copy Bundle Resources" phase from "TCA-SwiftUI" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A03452282D70E45200571B3E /* Resources */;
+			membershipExceptions = (
+				UserDetail/UserDetailReducer.swift,
+				UserList/UserListReducer.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A034522C2D70E45200571B3E /* TCA-SwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A034525B2D70E73A00571B3E /* Exceptions for "TCA-SwiftUI" folder in "TCA-SwiftUI" target */,
+				A034525C2D70E73A00571B3E /* Exceptions for "TCA-SwiftUI" folder in "Copy Bundle Resources" phase from "TCA-SwiftUI" target */,
+			);
 			path = "TCA-SwiftUI";
 			sourceTree = "<group>";
 		};
@@ -23,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03452462D70E58A00571B3E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,7 @@
 			);
 			name = "TCA-SwiftUI";
 			packageProductDependencies = (
+				A03452452D70E58A00571B3E /* ComposableArchitecture */,
 			);
 			productName = "TCA-SwiftUI";
 			productReference = A034522A2D70E45200571B3E /* TCA-SwiftUI.app */;
@@ -94,6 +126,9 @@
 			);
 			mainGroup = A03452212D70E45200571B3E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A03452442D70E58A00571B3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A034522B2D70E45200571B3E /* Products */;
 			projectDirPath = "";
@@ -324,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A03452442D70E58A00571B3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A03452452D70E58A00571B3E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03452442D70E58A00571B3E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A03452222D70E45200571B3E /* Project object */;
 }
